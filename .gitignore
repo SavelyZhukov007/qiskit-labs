@@ -1,1 +1,45 @@
 mcps/
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+.env
+*.egg-info/
+dist/
+build/
+env/
+venv/
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Python packaging
+pip-wheel-metadata/
+__pypackages__/
+.mypy_cache/
+
+# Jupyter
+*.ipynb_checkpoints
+
+# Local artifacts
+terminals/
+check.zip
+
+# Logs
+*.log
+
+#scripts
+scripts/
+
+#test
+tests/

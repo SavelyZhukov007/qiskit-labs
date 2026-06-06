@@ -1,0 +1,10 @@
+# Pinned dependency versions for reproducibility.
+# Update with `pip freeze > requirements.txt` after verifying environment.
+qiskit==1.4.5
+qiskit-aer==0.14.1
+numpy==1.26.2
+matplotlib==3.8.1
+pylatexenc==2.10
+jupyter==1.0.0
+pytest==7.4.2
+pandas==2.2.3

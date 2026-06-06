@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qiskit-labs"
+version = "0.1.0"
+description = "Educational Qiskit labs: circuits, algorithms, and BB84 QKD skeleton"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "qiskit>=1.0,<2.0",
+    "qiskit-aer>=0.13",
+    "numpy",
+    "matplotlib",
+    "pylatexenc",
+    "pandas",
+]
+
+[project.optional-dependencies]
+dev = ["jupyter", "pytest"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["circuits", "visualization", "qkd_utils", "shor_utils"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
